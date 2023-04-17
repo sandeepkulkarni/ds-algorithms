@@ -13,6 +13,7 @@ import java.util.LinkedList;
  -----------------------------------------------------------------------------------------------------------------------
 ### Note:
  LCA for BST : Making use of BST property
+ -----------------------------------------
  http://www.geeksforgeeks.org/lowest-common-ancestor-in-a-binary-search-tree/
  1. If both n1 and n2 are smaller than root, then LCA lies in left
  2. If both n1 and n2 are greater than root, then LCA lies in right
@@ -21,6 +22,7 @@ import java.util.LinkedList;
  Time Complexity: O(h), h = height of tree
 
 ### If Tree is not BST: http://www.geeksforgeeks.org/lowest-common-ancestor-binary-tree-set-1/
+ -----------------------
 
  Approach 1: Recursion (1 Traversal of Tree)
  1) Traverse the tree starting from root. If any of the given nodes (n1 and n2) matches with root, then root is LCA.
@@ -61,6 +63,7 @@ class Tree{
 
     /******************************************************************
      * By Recursion
+     * Also check Leetcode - https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
      ******************************************************************/
     public Node findLCA(Node node, int n1, int n2){
         if(node == null) {    //base condition

@@ -24,9 +24,10 @@ public class ClimbingStairs {
 
         int[] memo = new int[n+1];
         Arrays.fill(memo, -1);
-        result = obj.climbStairs_1(n, memo);
+        result =  obj.climbStairs_1(n, memo);
         System.out.println(result);
     }
+
 
     /**
      * Without memoization: Time complexity: O(2^n), Space complexity: O(n)

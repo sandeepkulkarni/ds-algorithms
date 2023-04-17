@@ -91,8 +91,8 @@ public class ReverseList {
         list.display(list.head);
 
         System.out.println("\nReverse List : ");
-//        list.head = list.reverseList_Iterative(list.head);
-        list.head = list.reverseList_Recursive(list.head);
+        list.head = list.reverseList_Iterative(list.head);
+//        list.head = list.reverseList_Recursive(list.head);
         list.display(list.head);
 
     }

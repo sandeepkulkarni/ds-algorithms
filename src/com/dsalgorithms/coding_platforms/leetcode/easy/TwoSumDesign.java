@@ -7,7 +7,7 @@ import java.util.Map;
  70. Two Sum III - Data structure design
 
  https://leetcode.com/problems/two-sum-iii-data-structure-design/
- Design and implement a TwoSum class. It should support the following operations: add and find.
+ Design and implement a _1_TwoSum class. It should support the following operations: add and find.
 
  add - Add the number to an internal data structure.
  find - Find if there exists any pair of numbers which sum is equal to the value.

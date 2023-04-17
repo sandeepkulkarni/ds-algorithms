@@ -27,10 +27,10 @@ import java.util.Arrays;
     5. Move maxEnd further when a new global max is found, update maxStart to startIndex
     6. Return subarray using maxStart and maxEnd
  */
-public class MaximumSumSubarray {
+public class _53_MaximumSumSubarray {
 
     public static void main(String[] args) {
-        MaximumSumSubarray obj = new MaximumSumSubarray();
+        _53_MaximumSumSubarray obj = new _53_MaximumSumSubarray();
 
         int[] input = {-2,1,-3,4,-1,2,1,-5,4};
         int maxSum = obj.maxSubArray(input);

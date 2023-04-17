@@ -101,7 +101,7 @@ class BinaryTree{
     public boolean isBalanced(Node root){
         if(getHeight_1(root) != -1){
             return true;
-        }else {
+        } else {
             return false;
         }
     }

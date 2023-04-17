@@ -28,22 +28,43 @@ Optimised Approach:
 	1. HashMap to store <Target - Num, Num index> and check while inserting num if diff is 0
 	2. If diff = 0, get previous value index and current value index and return
 */
-public class TwoSum {
+public class _1_TwoSum {
     public static void main(String[] args){
         int[] nums = {2,7,11,15};
         int target = 13;
 
-        TwoSum obj = new TwoSum();
+        _1_TwoSum obj = new _1_TwoSum();
         int[] result = obj.twoSum(nums, target);
         System.out.println(Arrays.toString(result));
     }
 
     /*
     Approach:
-        1. HashMap to store <Target - Num, Num index> and check while inserting num if diff is 0
+        1. HashMap to store <Num, Num index> and check while inserting num if diff is 0
         2. If diff = 0, get previous value index and current value index and return
     */
     public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for(int i=0; i < nums.length; i++){
+            int x = nums[i];
+
+            if(map.containsKey(target - x)) {		//check if target - nums[i] present in map
+                int previousIndex = map.get(target - x);
+                int[] result = {previousIndex, i};
+                return result;
+            } else {
+                map.put(x, i);	//store <num[i], num index> in map
+            }
+        }
+        return null;
+    }
+
+    /*
+    Approach 2:
+        1. HashMap to store <Target - Num, Num index> and check while inserting num if diff is 0
+        2. If diff = 0, get previous value index and current value index and return
+    */
+    /*public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> map = new HashMap<>();
         for(int i=0; i < nums.length; i++){
             if(map.containsKey(nums[i])) {		//found total target value as we store diff in key
@@ -55,5 +76,5 @@ public class TwoSum {
             }
         }
         return null;
-    }
+    }*/
 }
